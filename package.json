@@ -1,4 +1,5 @@
 {
+  "homepage": "https://syessaching.github.io/chezzabomediano-site/",
   "name": "chezzabomediano-site",
   "private": true,
   "version": "1.0.0",
@@ -10,7 +11,8 @@
     "dev:router": "react-router dev",
     "build:router": "react-router build",
     "start:router": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
+    "typecheck": "react-router typegen && tsc",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@react-router/node": "^7.1.5",
@@ -28,6 +30,7 @@
     "@types/react-dom": "^19.0.1",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.3",
     "react-router-devtools": "^1.1.0",
     "tailwindcss": "^3.4.17",

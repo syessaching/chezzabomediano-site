@@ -5,6 +5,8 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLocation, 
+  Navigate
 } from "react-router";
 
 import type { Route } from "./+types/root";
@@ -42,6 +44,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
+  const { pathname } = useLocation();
+  if (pathname === "/") return <Navigate to="/home" replace />;
   return <Outlet />;
 }
 
